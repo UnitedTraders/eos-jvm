@@ -24,7 +24,7 @@ data class Block(
     val block_num: Int,
     val ref_block_prefix: Long,
     val previous: String,
-    val timestamp: Date,
+    val timestamp: String,
     val transaction_mroot: String,
     val action_mroot: String,
     val block_mroot: String?,
