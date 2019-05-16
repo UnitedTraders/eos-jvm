@@ -19,5 +19,6 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class GetTransaction(
-    val id: String
+    val id: String,
+    val block_num_hint: Int
 )

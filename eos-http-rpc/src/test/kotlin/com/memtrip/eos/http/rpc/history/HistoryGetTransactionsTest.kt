@@ -44,7 +44,8 @@ class HistoryGetTransactionsTest : Spek({
         on("v1/history/get_transaction") {
 
             val transaction = historyApi.getTransaction(GetTransaction(
-                action.action_trace.trx_id
+                action.action_trace.trx_id,
+                action.block_num
             )).blockingGet()
 
             it("should return the account") {
